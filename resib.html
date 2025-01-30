@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header></header>
+
+    <section id="checkout">
+      <h2>Your Order has been placed successfully!</h2>
+      <p>We'll process your order and send you a confirmation email shortly.</p>
+      <button><a href="./index.html">Back to Shopping</a></button>
+    </section>
+    <section id="checkout">
+      <h2>Your Order Summary</h2>
+
+      <div class="invoice">
+        <h3>Invoice</h3>
+
+        <p><strong>Order Number:</strong> #123456789</p>
+        <p><strong>Date:</strong> <span id="invoice-date"></span></p>
+
+        <div id="items"></div>
+
+        <div class="invoice-summary">
+          <p><strong>Subtotal:</strong> $<span id="subtotal">66.66</span></p>
+          <p><strong>Shipping:</strong> $5.00</p>
+          <p><strong>Total:</strong> $<span id="total">77.45</span></p>
+        </div>
+
+        <div class="customer-info">
+          <h4>Customer Information</h4>
+          <p><strong>Name:</strong>Varith</p>
+          <p><strong>Email:</strong>tvarith@gmail.com</p>
+          <p><strong>Shipping Address:</strong> 123 Main St, City, Country</p>
+        </div>
+      </div>
+
+      <a href="./index.html">
+        <button>Back to Shopping</button>
+      </a>
+      <button onclick="finalizeOrder()">Complete Order</button>
+    </section>
+  </body>
+</html>
+<style>
+  #checkout {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .post {
+    padding: center;
+  }
+
+  .invoice {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .invoice h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .invoice p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .invoice-summary {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .invoice-summary p {
+    margin: 10px 0;
+  }
+
+  .invoice-summary strong {
+    font-weight: bold;
+  }
+
+  .customer-info {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .customer-info h4 {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 5px;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+</style>

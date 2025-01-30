@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        width: 200px;
+      }
+
+      .buttons {
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .show-password {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+
+      .forgot-password {
+        margin-bottom: 10px;
+      }
+
+      .social-login {
+        margin-top: 20px;
+      }
+
+      .social-login button {
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="/download-removebg-preview.png" alt="E-mall Logo" />
+      </div>
+
+      <div class="buttons">
+        <button>LOG IN</button>
+        <a href="register.html">
+          <button>REGISTER</button>
+        </a>
+      </div>
+
+      <input type="text" placeholder="Email Address or Phone" />
+      <div style="position: relative">
+        <input type="password" placeholder="Password" />
+        <span class="show-password">&#9993;</span>
+      </div>
+
+      <button>LOG IN</button>
+
+      <div class="forgot-password">
+        <a href="#">Forgot Password?</a> | <a href="#">I don't have account.</a>
+      </div>
+
+      <div class="social-login">
+        <button><i class="bx bxl-facebook-circle"></i> Facebook</button>
+        <button><i class="bx bxl-google"></i> Google</button>
+      </div>
+    </div>
+  </body>
+</html>
